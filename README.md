@@ -1,51 +1,64 @@
-# CC_T3_Blindness-Detection
-CODE CLAUSE : Artificial Intellegence Intern ,TASK-3
-# Blindness Detection
+# Blindness Detection Project
 
-![Blindness Detection]
+## Author
+**Hritik Ranjan**
 
-This repository contains code for detecting eyes in an image using Haar cascades in OpenCV.
-
-## Description
-
-The `eye_detection.py` script utilizes a pre-trained Haar cascade classifier for eye detection. It loads an image, converts it to grayscale, and detects eyes using the Haar cascade classifier. If eyes are detected, it prints "Eyes detected!"; otherwise, it prints "No eyes detected." The script also displays the image with rectangles around the detected eyes.
+## Project Overview
+The Blindness Detection project is a Python-based application using OpenCV to detect eyes in an image. This project uses a pre-trained Haar Cascade model to identify eyes, which can be a foundational step in building systems for detecting blindness or other eye-related issues through image analysis.
 
 ## Table of Contents
-
+- [Introduction](#introduction)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Example](#example)
-- [Contributing](#contributing)
+- [Results](#results)
 - [License](#license)
+- [Contact](#contact)
+
+## Introduction
+The project detects eyes in a given image using OpenCV's Haar Cascade classifier. The goal is to demonstrate how basic computer vision techniques can be used for detecting facial features, which can later be extended for medical applications like blindness detection.
+
+## Features
+- **Eye Detection**: Detects eyes in an image using the Haar Cascade model.
+- **Image Display**: Shows the image with rectangles drawn around detected eyes.
+- **Scalable Model**: The model can be fine-tuned or expanded for more complex eye-related feature detection.
 
 ## Installation
+To run this project, you need to install Python along with the necessary libraries. Follow these steps:
 
-1. Clone the repository:
-
+1. **Clone the repository** (if applicable):
    ```bash
-   git clone <repository URL>
+   git clone https://github.com/hritikranjan1/blindness-detection.git
+   cd blindness-detection
+2.Install dependencies: Make sure you have Python installed, and run the following command to install OpenCV:
+
+    pip install opencv-python
+
+3.Prepare the image: Place your test image named eye_image.jpg in the project directory or change the filename in the code to match your image's name.
+Usage
+
+Once the dependencies are installed and the image is prepared, you can run the program as follows:
+
+   1.un the Python script:
    
-  2. Install the required dependencies:
+    python blindness_detection.py
 
-    ```` bash
-   pip install opencv-python
-   
-   Make sure you have OpenCV installed in your environment.
+2. Interpretation:
 
-   Usage
-   ********
-   1.Place the image you want to analyze in the project directory and name it eye_image.jpg.
+  -  The script will detect eyes in the provided image.
+  -   If eyes are detected, a message saying "Eyes detected!" will be printed, and the image will be displayed with rectangles around the eyes.
+  -   If no eyes are detected, a message saying "No eyes detected." will appear.
+    
+## Example Workflow:
 
-   2.Run the eye detection script:
+    Eyes detected!
 
-   ```Bash
-     python eye_detection.py
+An image will appear with rectangles marking the detected eyes.
+## License
 
-     This will execute the script and detect eyes in the eye_image.jpg file.
+This project is licensed under the MIT License - see the LICENSE file for details.
+## Contact
+- Name: Hritik ranjan
+- GitHub: https://github.com/hritikranjan1
+- LinkedIn: https://www.linkedin.com/in/hritik-ranjan-05a835230/
 
-Contributing
-*************
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. 
-
-
-  
